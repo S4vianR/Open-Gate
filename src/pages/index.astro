@@ -6,17 +6,75 @@ import Header from "../components/Header.astro";
 <Layout title="Bienvenido a Open Gate.">
   <main class="flex flex-col">
     <Header />
-    <section
-      class="p-2 mt-5 w-3/4 flex flex-col justify-center items-center self-center"
-    >
-      <div class="flex flex-col justify-center items-center">
-        <p class="text-lg font-medium">
-          Open Gate es una plataforma de educación en línea que te permite
-          aprender a tu propio ritmo, en cualquier lugar y en cualquier momento.
+    <section class="mt-24 flex flex-col justify-center items-center gap-12">
+      <div
+        class="w-1/2 border-2 border-secondary-300 rounded-lg flex flex-row gap-5 p-3"
+      >
+        <div class="flex flex-col justify-evenly items-start">
+          <h2 class="text-2xl font-bold text-accent-300">
+            Bienvenidos a <span
+              class="text-accent-500 underline underline-offset-2 transition-all hover:underline-offset-4 hover:cursor-default"
+              >OpenGate</span
+            >
+          </h2>
+          <p>
+            Su puerta de entrada al mundo de las tecnologías abiertas y
+            propietarias. OpenGate es una empresa líder en consultoría de
+            sistemas operativos Linux y Windows, con una amplia experiencia en
+            la implementación y soporte de estas tecnologías en empresas de
+            diversos sectores.
+          </p>
+        </div>
+        <img
+          src="../../logo.webp"
+          alt="OpenGate Logo Image"
+          class="aspect-square w-48 rounded-xl"
+        />
+      </div>
+      <div
+        class="w-1/2 border-2 border-secondary-300 rounded-lg flex flex-col gap-5 p-3"
+      >
+        <span class="font-bold text-accent"> ¿Qué te espera en OpenGate?</span>
+        <ul class="list-disc list-inside">
+          <li class="list-item">
+            <span class="font-bold text-secondary-500"
+              >Expertos en Linux y Windows:</span
+            > Contamos con un equipo de profesionales altamente calificados y certificados
+            en las últimas tecnologías de Linux y Windows.
+          </li>
+          <li class="list-item">
+            <span class="font-bold text-secondary-500"
+              >Soluciones integrales:</span
+            > Ofrecemos soluciones integrales que abarcan desde la consultoría y
+            la implementación hasta el soporte técnico 24/7.
+          </li>
+          <li class="list-item">
+            <span class="font-bold text-secondary-500"
+              >Enfoque en el cliente:</span
+            > Nos centramos en las necesidades específicas de cada cliente y diseñamos
+            soluciones personalizadas que se ajustan a sus objetivos y presupuesto.
+          </li>
+          <li class="list-item">
+            <span class="font-bold text-secondary-500"
+              >Excelencia en el servicio:</span
+            > Brindamos un servicio al cliente excepcional, con un equipo dedicado
+            a satisfacer sus necesidades.
+          </li>
+        </ul>
+        <span>
+          ¿Estás listo para abrir las puertas al éxito de tu negocio?
+        </span>
+        <p>
+          <span
+            ><a href="mailto:reuben4.com@protonmail.com"
+            class="underline underline-offset-2 text-accent-500 hover:text-accent-700 transition-colors"
+              >Contáctanos hoy mismo</a
+            ></span
+          > y descubre cómo OpenGate puede ayudarte a alcanzar tus objetivos.
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-3 text-center mt-8 w-full text-balance">
-        <div class="flex flex-col justify-center items-center w-full p-1 bg-secondary-100">
+      <!-- <div class="grid grid-cols-2 gap-3 text-center mt-8 w-full text-balance">
+        <div class="flex flex-col justify-center items-center w-full p-1">
           <h3 class="text-xl font-medium">Misión</h3>
           <p>
             Proporcionar soluciones integrales y personalizadas de consultoría,
@@ -26,7 +84,7 @@ import Header from "../components/Header.astro";
             negocio.
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center w-full p-1 bg-secondary-100">
+        <div class="flex flex-col justify-center items-center w-full p-1">
           <h3 class="text-xl font-medium">Visión</h3>
           <p>
             Ser la empresa líder en consultoría de sistemas operativos Linux y
@@ -34,7 +92,7 @@ import Header from "../components/Header.astro";
             cliente.
           </p>
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
 </Layout>
